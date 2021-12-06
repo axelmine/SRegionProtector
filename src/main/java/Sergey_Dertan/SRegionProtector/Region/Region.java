@@ -10,7 +10,6 @@ import Sergey_Dertan.SRegionProtector.Utils.Utils;
 import cn.nukkit.Server;
 import cn.nukkit.level.Position;
 import cn.nukkit.math.AxisAlignedBB;
-import cn.nukkit.math.SimpleAxisAlignedBB;
 import cn.nukkit.math.Vector3;
 import it.unimi.dsi.fastutil.objects.Object2ObjectArrayMap;
 import it.unimi.dsi.fastutil.objects.ObjectAVLTreeSet;
@@ -29,7 +28,7 @@ import static Sergey_Dertan.SRegionProtector.Utils.Tags.*;
  * @see Region#lock
  */
 @SuppressWarnings({"WeakerAccess", "unused"})
-public final class Region implements AxisAlignedBB {
+public final class Region extends AxisAlignedBB {
 
     public final Object lock = new Object();
 
@@ -136,7 +135,7 @@ public final class Region implements AxisAlignedBB {
     @SuppressWarnings("MethodDoesntCallSuperMethod")
     @Override
     public AxisAlignedBB clone() {
-        return new SimpleAxisAlignedBB(this.minX, this.minY, this.minZ, this.maxX, this.maxY, this.maxZ);
+        return new AxisAlignedBB(this.minX, this.minY, this.minZ, this.maxX, this.maxY, this.maxZ);
     }
 
     public boolean getFlagState(int id) {
@@ -304,7 +303,7 @@ public final class Region implements AxisAlignedBB {
     }
 
     public AxisAlignedBB getBoundingBox() {
-        return new SimpleAxisAlignedBB(this.minX, this.minY, this.minZ, this.maxX, this.maxY, this.maxZ);
+        return new AxisAlignedBB(this.minX, this.minY, this.minZ, this.maxX, this.maxY, this.maxZ);
     }
 
     public boolean isLivesIn(String target) {
