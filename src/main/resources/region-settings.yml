@@ -1,0 +1,79 @@
+help-link: "If u need help with plugin u can visit wiki https://github.com/SergeyDertan/SRegionProtector/wiki or contact me in telegram http://t.me/Sergey57ss"
+
+default-flags:
+  move: false
+  place: true
+  break: true
+  interact: false
+  use: true
+  pvp: true
+  explode: true
+  lighter: true
+  magic-item-use: false
+  heal: false
+  invincible: false
+  potion-launch: false
+  leaves-decay: false
+  item-drop: false
+  send-chat: false
+  receive-chat: false
+  teleport: true
+  health-regen: false
+  mob-damage: false
+  mob-spawn: false
+  crops-destroy: true
+  redstone: false
+  ender-pearl: false
+  explode-block-break: true
+  liquid-flow: true
+  fire: false
+  lightning-strike: true
+  chest-access: true
+  sleep: false
+  chunk-loader: false
+  smart-doors: true
+  minefarm: false
+  fall-damage: false
+  nether-portal: true
+  frame-item-drop: true
+  bucket-empty: true
+  bucket-fill: true
+  block-fall: true
+  minecart-destroy: true
+  hopper: false
+  entry: false
+need-message:
+  move: false
+  place: true
+  break: true
+  interact: true
+  use: true
+  pvp: true
+  lighter: false
+  magic-item-use: false
+  heal: false
+  invincible: false
+  potion-launch: false
+  item-drop: true
+  send-chat: true
+  receive-chat: false
+  teleport: true
+  health-regen: false
+  crops-destroy: true
+  ender-pearl: true
+  fire: true
+  chest-access: true
+  sleep: true
+  minefarm: false
+  fall-damage: false
+  nether-portal: true
+  frame-item-drop: true
+  bucket-empty: true
+  bucket-fill: true
+  minecart-destroy: true
+  entry: true
+max-region-name-length: 10
+min-region-name-length: 3
+# 1 second = 20 ticks
+heal-flag-heal-delay: 40
+heal-flag-heal-amount: 3
