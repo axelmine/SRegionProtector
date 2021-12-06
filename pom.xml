@@ -6,10 +6,10 @@
 
     <groupId>sergeydertan.sregionprotector</groupId>
     <artifactId>SRegionProtector</artifactId>
-    <version>30.0</version>
+    <version>30.1-PM1E-NOMV-475</version>
     <name>SRegionProtector</name>
-    <description>Flexible region protection plugin for nukkit</description>
-    <url>https://github.com/SergeyDertan/SRegionProtector</url>
+    <description>Flexible region protection plugin for Nukkit PM1E</description>
+    <url>https://github.com/WylSmart/SRegionProtector</url>
     <licenses>
         <license>
             <name>GNU GENERAL PUBLIC LICENSE</name>
@@ -18,9 +18,9 @@
     </licenses>
     <developers>
         <developer>
-            <name>Sergey Dertan</name>
-            <email>superator2018@gmail.com</email>
-            <url>https://github.com/SergeyDertan</url>
+            <name>Andrej</name>
+            <email>sandrey.de@gmail.com</email>
+            <url>https://github.com/wylsmart</url>
         </developer>
     </developers>
     <profiles>
@@ -64,11 +64,13 @@
     </repositories>
     <dependencies>
         <dependency>
-            <groupId>cn.nukkit</groupId>
-            <artifactId>nukkit</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <scope>provided</scope>
-        </dependency>
+             <groupId>cn.nukkit</groupId>
+             <artifactId>Nukkit</artifactId>
+             <version>PM1E</version>
+             <optional>false</optional>
+             <scope>system</scope>
+             <systemPath>${basedir}/Nukkit-PM1E.jar</systemPath>
+         </dependency>
         <dependency>
             <groupId>sergeydertan.sregionprotector</groupId>
             <artifactId>fastutil-lite</artifactId>
