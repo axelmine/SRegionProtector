@@ -11,7 +11,7 @@ SRegionProtector is a Nukkit PM1E plugin that allows players to protect their re
 * Lots of flags
 * Flexible settings
 * High performance
-* Add support Nukkit PM1E (by WylSmart)
+* Added support Nukkit PM1E (by WylSmart)
 ## Maven dependency
 <details>
 <summary>Maven dependency</summary>
