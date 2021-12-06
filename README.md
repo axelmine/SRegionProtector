@@ -1,5 +1,5 @@
 # SRegionProtector
-SRegionProtector is a nukkit plugin that allows players to protect their regions.
+SRegionProtector is a Nukkit PM1E plugin that allows players to protect their regions.
 ## Download
 * [NukkitX.com](https://nukkitx.com/resources/sregionprotector.164/)
 * [NukkitX.com] Support for Nukkit PM1E (https://nukkitx.com/resources/wylsmart.4441/)
