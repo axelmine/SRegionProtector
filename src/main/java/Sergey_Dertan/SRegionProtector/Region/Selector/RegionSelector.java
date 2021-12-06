@@ -5,6 +5,7 @@ import cn.nukkit.block.Block;
 import cn.nukkit.level.GlobalBlockPalette;
 import cn.nukkit.math.Vector3;
 import cn.nukkit.network.SourceInterface;
+import cn.nukkit.network.protocol.ProtocolInfo;
 import cn.nukkit.network.protocol.UpdateBlockPacket;
 import it.unimi.dsi.fastutil.ints.Int2ObjectArrayMap;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
@@ -181,7 +182,7 @@ public final class RegionSelector {
                     pk.y = (int) s.y;
                     pk.z = (int) s.z;
                     pk.flags = UpdateBlockPacket.FLAG_ALL;
-                    pk.blockRuntimeId = GlobalBlockPalette.getOrCreateRuntimeId(target.level.getBlockIdAt((int) s.x, (int) s.y, (int) s.z), target.level.getBlockDataAt((int) s.x, (int) s.y, (int) s.z));
+                    pk.blockRuntimeId = GlobalBlockPalette.getOrCreateRuntimeId(ProtocolInfo.CURRENT_PROTOCOL, target.level.getBlockIdAt((int) s.x, (int) s.y, (int) s.z), target.level.getBlockDataAt((int) s.x, (int) s.y, (int) s.z));
                     inter.putPacket(target, pk);
                 });
             } else {
