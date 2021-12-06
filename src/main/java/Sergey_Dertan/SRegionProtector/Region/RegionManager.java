@@ -14,7 +14,6 @@ import Sergey_Dertan.SRegionProtector.Region.Flags.RegionFlags;
 import cn.nukkit.Player;
 import cn.nukkit.level.Level;
 import cn.nukkit.math.AxisAlignedBB;
-import cn.nukkit.math.SimpleAxisAlignedBB;
 import cn.nukkit.math.Vector3;
 import cn.nukkit.utils.Logger;
 import cn.nukkit.utils.TextFormat;
@@ -190,7 +189,7 @@ public final class RegionManager {
     }
 
     public boolean checkOverlap(Vector3 pos1, Vector3 pos2, String level, String creator, boolean checkSellFlag, Region self) {
-        AxisAlignedBB bb = new SimpleAxisAlignedBB(pos1, pos2);
+        AxisAlignedBB bb = new AxisAlignedBB(pos1, pos2);
 
         for (Chunk chunk : this.chunkManager.getRegionChunks(pos1, pos2, level, false)) {
             for (Region region : chunk.getRegions()) {
